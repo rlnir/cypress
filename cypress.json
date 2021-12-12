@@ -1,0 +1,8 @@
+{
+  "defaultCommandTimeout": 10000,
+  "baseUrl": "http://avonow.com",
+  "env": {
+    "address": "google",
+    "signInErrorMessage": "Sorry, we couldn't sign you in using these credentials, please try again!"
+  }
+}
