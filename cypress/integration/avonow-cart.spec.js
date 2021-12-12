@@ -9,27 +9,27 @@ context(TEST_("AvoNow Cart"), () => {
   const CART_ITEM_PRICE_TOTAL = ".CartTableProduct-total";
   const CART_ITEM_COUNT = ".DirtyButton-countButton";
 
-  // it("validate cart badge", () => {
-  //   const itemsNumber = 3;
+  it("validate cart badge", () => {
+    const itemsNumber = 3;
 
-  //   cy.openStore()
+    cy.openStore()
 
-  //   cy.addItemsToCart("Frozen", itemsNumber)
+    cy.addItemsToCart("Frozen", itemsNumber)
 
-  //   cy.get(CART_BADGE).should("have.text", itemsNumber)
-  // });
+    cy.get(CART_BADGE).should("have.text", itemsNumber)
+  });
 
-  // it("validate cart items", () => {
-  //   const itemsNumber = 2;
+  it("validate cart items", () => {
+    const itemsNumber = 2;
 
-  //   cy.openStore()
+    cy.openStore()
 
-  //   cy.addItemsToCart("Frozen", itemsNumber)
+    cy.addItemsToCart("Frozen", itemsNumber)
 
-  //   cy.get(SHOPPING_CART_BUTTON).click()
+    cy.get(SHOPPING_CART_BUTTON).click()
 
-  //   cy.get(CART_ITEM).should("have.length", itemsNumber);
-  // });
+    cy.get(CART_ITEM).should("have.length", itemsNumber);
+  });
 
   it("increase item amount in cart", () => {
     const itemsNumber = 1;
